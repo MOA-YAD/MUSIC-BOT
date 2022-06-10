@@ -19,17 +19,17 @@ async def play_logs(message, streamtype):
         else:
             chatusername = "Private Group"
         logger_text = f"""
-**WINX PLAY LOG**
+**سجل التشغيل**
 
-**Chat:** {message.chat.title} [`{message.chat.id}`]
-**User:** {message.from_user.mention}
-**Username:** @{message.from_user.username}
-**User ID:** `{message.from_user.id}`
-**Chat Link:** {chatusername}
+**المحادثه:** {message.chat.title} [`{message.chat.id}`]
+**المستخدم:** {message.from_user.mention}
+**يوزره:** @{message.from_user.username}
+**ايديه:** `{message.from_user.id}`
+**يوزر المحادثه:** {chatusername}
 
 **Query:** {message.text}
 
-**StreamType:** {streamtype}"""
+**😶😶😶😶:** {streamtype}"""
         if message.chat.id != LOG_GROUP_ID:
             try:
                 await app.send_message(
