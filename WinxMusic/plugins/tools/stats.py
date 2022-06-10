@@ -115,7 +115,7 @@ async def gstats_global(client, message: Message, _):
         vidid,
     ) = await YouTube.details(videoid, True)
     title = title.title()
-    final = f"Top Most Played Track on {MUSIC_BOT_NAME}\n\n**Title:** {title}\n\nPlayed** {co} **times"
+    final = f"اكثر مقاطع تم تشغيلها {MUSIC_BOT_NAME}\n\n**المعلومات:** {title}\n\nمرات التشغيل** {co} **مره"
     upl = get_stats_markup(
         _, True if message.from_user.id in SUDOERS else False
     )
@@ -189,9 +189,9 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
                 details = stats.get(items)
                 title = (details["title"][:35]).title()
                 if items == "telegram":
-                    msg += f"🔗[Telegram Files and Audios](https://t.me/telegram) ** played {count} times**\n\n"
+                    msg += f"🔗[رابط المحادثة](https://t.me/telegram) ** مرات التشغيل {count} مره**\n\n"
                 else:
-                    msg += f"🔗 [{title}](https://www.youtube.com/watch?v={items}) ** played {count} times**\n\n"
+                    msg += f"🔗 [{title}](https://www.youtube.com/watch?v={items}) ** مرات التشغيل {count} مره**\n\n"
 
             temp = (
                 _["gstats_4"].format(
@@ -233,7 +233,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
             except:
                 continue
             limit += 1
-            msg += f"🔗`{extract}` played {count} times on bot.\n\n"
+            msg += f"🔗`{extract}` مرات التشغيل {count} مره في البوت.\n\n"
         temp = (
             _["gstats_5"].format(limit, MUSIC_BOT_NAME)
             if what == "Chats"
@@ -281,9 +281,9 @@ async def overall_stats(client, CallbackQuery, _):
     else:
         ass = "No"
     cm = config.CLEANMODE_DELETE_MINS
-    text = f"""**Bot's Stats and Information:**
+    text = f"""**احصائيات البوت والمستخدمين:**
 
-**Imported Modules:** {mod}
+**استلام البيانات من البوت:** {mod}
 **Served Chats:** {served_chats} 
 **Served Users:** {served_users} 
 **Blocked Users:** {blocked} 
