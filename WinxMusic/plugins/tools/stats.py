@@ -365,35 +365,35 @@ async def overall_stats(client, CallbackQuery, _):
     total_queries = await get_queries()
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
-    text = f""" **Bot's Stats and Information:**
+    text = f""" **احصائيات ومعلومات البوت:**
 
-**Imported Modules:** {mod}
-**Platform:** {sc}
-**Ram:** {ram}
-**Physical Cores:** {p_core}
-**Total Cores:** {t_core}
-**Cpu Frequency:** {cpu_freq}
+**البيانات المستوردة:** {mod}
+**النضام الاساسي:** {sc}
+**الرام:** {ram}
+**نوع النضام:** {p_core}
+**اجمالي نوات البوت:** {t_core}
+**تردد وحدة المعالجه المركزيه:** {cpu_freq}
 
-**Python Version :** {pyver.split()[0]}
-**Pyrogram Version :** {pyrover}
-**Py-TgCalls Version :** {pytgver}
+**اصدار Python :** {pyver.split()[0]}
+**اصدار Pyrogram :** {pyrover}
+**اصدار Py-TgCalls :** {pytgver}
 
-**Storage Avail:** {total[:4]} GiB
-**Storage Used:** {used[:4]} GiB
-**Storage Left:** {free[:4]} GiB
+**مساحة التخزين:** {total[:4]} GiB
+**مساحة التخزين المستخدمة:** {used[:4]} GiB
+**سعة التخزين المتوفره:** {free[:4]} GiB
 
-**Served Chats:** {served_chats} 
-**Served Users:** {served_users} 
-**Blocked Users:** {blocked} 
-**Sudo Users:** {sudoers} 
+**الكروبات الشغاله:** {served_chats} 
+** مجموع المستخدمين:** {served_users} 
+**مستخدمين محضورين:** {blocked} 
+**مستخدمين البوت:** {sudoers} 
 
-**Mongo Uptime:** {mongouptime[:4]} Days
-**Total DB Size:** {datasize[:6]} Mb
-**Total DB Storage:** {storage} Mb
-**Total DB Collections:** {collections}
-**Total DB Keys:** {objects}
-**Total DB Queries:** `{query}`
-**Total Bot Queries:** `{total_queries} `
+**وقت تشغيل تخزين Mongo:** {mongouptime[:4]} يوم
+**اجمالي حجم قاعدة البيانات:** {datasize[:6]} ميغا بايت
+**مساحة التخزين:** {storage} ميغا بايت
+**اجمالي عدد مساحات التخزين:** {collections}
+**مجموع مفاتيح قاعدة اليانات:** {objects}
+**اجمالي استعمال قاعدة البيانات:** `{query}`
+**اجمالي استعمال البوت:** `{total_queries} `
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
