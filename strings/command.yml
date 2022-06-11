@@ -12,17 +12,17 @@
 # Commands in Every Language
 
 # Bot Commands
-PING_COMMAND : ["ping"]
-START_COMMAND : ["start"]
-HELP_COMMAND : ["help"]
-SETTINGS_COMMAND : ["settings", "setting"]
+PING_COMMAND : ["بنك"]
+START_COMMAND : ["تفعيل"]
+HELP_COMMAND : ["$"]
+SETTINGS_COMMAND : ["الاعدادات", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
 STATS_COMMAND : ["stats"]
-LANGUAGE_COMMAND : ["lang", "language", "langs"]
+
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["تشغيل", "فيديو", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
@@ -96,8 +96,8 @@ UNAUTHORIZE_COMMAND : ["unauthorize"]
 AUTHORIZED_COMMAND : ["authorized"]
 
 #Block Users Command
-BLOCK_COMMAND : ["block"]
-UNBLOCK_COMMAND : ["unblock"]
+BLOCK_COMMAND : ["حظر"]
+UNBLOCK_COMMAND : ["الغاء_الحظر"]
 BLOCKED_COMMAND : ["blockedusers"]
 
 #sPEEDTEST
