@@ -1,6 +1,6 @@
 {
-    "name": "Winx Music Bot",
-    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "name": "Music Bot",
+    "description": "بوت تشغيل اغاني في مكالمات التلكرام تم تطويره على يد https://t.me/MOA_YAD.",
     "logo": "https://telegra.ph/file/97840a937d1594f50a31e.jpg",
     "keywords": [
     "python3",
@@ -44,23 +44,23 @@
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "description": "ايدي المطور.",
         "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "description": "كود بايجرام.",
         "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
+        "description": "هيروكو ايبي كي",
         "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
-        "description": "Your heroku app/bot's name",
-        "value": "",
+        "description": "اسم تطبيق هيروكو الخاص بيك",
+        "value": "MUISC",
         "required": false
       },
       "LOG_GROUP_ID": {
