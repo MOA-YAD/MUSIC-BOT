@@ -26,6 +26,11 @@ def setting_markup(_):
             InlineKeyboardButton(
                 text=_["ST_B_3"], callback_data="AU"
             ),
+                        InlineKeyboardButton(
+
+                text=_["ST_B_6"], callback_data="LG"
+
+            ),
         ],
         [
             InlineKeyboardButton(
