@@ -12,7 +12,7 @@
 # Commands in Every Language
 
 # Bot Commands
-PING_COMMAND : ["بنك"]
+PING_COMMAND : ["ping"]
 START_COMMAND : ["تفعيل"]
 HELP_COMMAND : ["$"]
 SETTINGS_COMMAND : ["الاعدادات", "setting"]
