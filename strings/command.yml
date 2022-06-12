@@ -13,7 +13,7 @@
 
 # Bot Commands
 PING_COMMAND : ["ping"]
-START_COMMAND : ["تفعيل"]
+START_COMMAND : ["start"]
 HELP_COMMAND : ["$"]
 SETTINGS_COMMAND : ["الاعدادات", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
