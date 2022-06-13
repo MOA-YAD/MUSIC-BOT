@@ -96,8 +96,8 @@ UNAUTHORIZE_COMMAND : ["unauthorize"]
 AUTHORIZED_COMMAND : ["authorized"]
 
 #Block Users Command
-BLOCK_COMMAND : ["حظر"]
-UNBLOCK_COMMAND : ["الغاء_الحظر"]
+BLOCK_COMMAND : ["block"]
+UNBLOCK_COMMAND : ["unblock"]
 BLOCKED_COMMAND : ["blockedusers"]
 
 #sPEEDTEST
